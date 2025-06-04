@@ -1,18 +1,12 @@
 let slideIndex = 1;
 let slideInterval;
 
-document.addEventListener('DOMContentLoaded', function() {
-  showSlides(slideIndex);
-  startAutoPlay();
-});
-
 function plusSlides(n) {
   resetAutoPlay();
   showSlides(slideIndex += n);
 }
 
 function currentSlide(n) {
-  resetAutoPlay();
   showSlides(slideIndex = n);
 }
 
@@ -34,15 +28,4 @@ function showSlides(n) {
   
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-}
-
-function startAutoPlay() {
-  slideInterval = setInterval(() => {
-    plusSlides(1);
-  }, 5000); 
-}
-
-function resetAutoPlay() {
-  clearInterval(slideInterval);
-  startAutoPlay();
 }
