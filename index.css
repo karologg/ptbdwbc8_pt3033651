@@ -49,7 +49,7 @@ body {
 .slideshow-container {
     max-width: 1000px;
     position: relativa;
-    margin: auto;
+    margin: 100px;
 }
 
 .slides {
