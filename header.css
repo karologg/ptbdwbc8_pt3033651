@@ -1,0 +1,101 @@
+/* Reset de margens e preenchimentos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilização do corpo */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Estilização do cabeçalho */
+header {
+  background-color: #ffffff; /* branco para o fundo geral */
+}
+
+/* Estilização da barra de navegação */
+nav {
+  display: flex;
+  justify-content: flex-start;;
+  align-items: center;
+  background-color: #222; /* preto ou cinza bem escuro */
+  padding: 0 20px;
+  height: 60px;
+  border-radius: 0; /* sem bordas arredondadas */
+}
+
+/* Estilização dos links da navegação */
+nav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+/* Efeito hover nos links */
+nav a:hover {
+  background-color: red;
+}
+
+/* Estilização das seções da navegação */
+.nav-left {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-right {
+  display: flex;
+}
+
+/* Estilização do dropdown */
+.dropdown {
+  position: relative;
+}
+
+/* Estilização do botão do dropdown */
+.dropbtn {
+  cursor: pointer;
+}
+
+/* Estilização do conteúdo do dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #444;
+  min-width: 200px;
+  z-index: 1;
+  flex-direction: column;
+}
+
+/* Estilização dos links dentro do dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Efeito hover nos links do dropdown */
+.dropdown-content a:hover {
+  background-color: red;
+}
+
+/* Mostrar o dropdown ao passar o mouse */
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+/* Estilização do banner */
+.banner {
+  background-color: #007e3a; /* verde do IFSP */
+  padding: 10px 0;
+  text-align: left;
+}
+
+.banner img {
+  height: 80px;
+  object-fit: contain;
+}
