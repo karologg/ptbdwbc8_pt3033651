@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="eventos.css">
+    <link rel="stylesheet" href="style.css">
+    <title>EVENTOS</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-left">
+          <a href="index.html">HOME</a>
+          <a href="eventos.html">EVENTOS</a>
+          <a href="contato.html">CONTATO</a>
+          <div class="dropdown">
+            <a href="cursos.html" class="dropbtn">CURSOS ▼</a>
+            <div class="dropdown-content">
+              <a href="engenharia-producao.html">Engenharia da Produção</a>
+              <a href="analise-sistemas.html">Análise e Desenvolvimento de Sistemas</a>
+            </div>
+          </div>
+          <a href="entrar.html">ENTRAR</a>
+        </div>
+        <div class="nav-right">
+          <a href="sobre.html">SOBRE</a>
+        </div>
+      </nav>
+      <div class="banner">
+        <img src="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/77770610c0de515c6150e899d70445ff3d25094d/Logo.jpg" alt="Instituto Federal São Paulo">
+      </div>
+    </header>
+    <main>
+      <form>
+        <h1>Inscreva-se</h1>
+        <fieldset>
+          <legend>Evento</legend>
+          <select name="evento" id="evento">
+            <option value="selecione">-- Selecione --</option>
+            <option value="VSA">Voe Sem Asas</option>
+            <option value="FJ">Festa Junina</option>
+            <option value="SNCT">Semana de Tecnologia</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Informações de Acesso</legend>
+
+          <div>
+            <label for="usuario">Usuário</label>
+            <input type="text" id="usuario" name="usuario" required>
+          </div>
+
+          <div>
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" required>
+          </div>
+
+          <div>
+            <label for="confirmar-senha"> Confirme a Senha</label>
+            <input type="password" id="confirmar-senha" name="confirmar-senha" required>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Informações Pessoais</legend>
+
+          <div>
+            <label for="nome"> Nome Completo </label>
+            <input type="text" id="nome" name="nome" required>
+          </div>
+
+          <div>
+            <label for="email"> E-mail</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div>
+            <label for="celular"> Celular </label>
+            <input type="tel" id="celular" name="celular" required>
+          </div>
+          <fieldset class="grupo-radio">
+            <legend>Sexo</legend>
+            <label>
+              <input type="radio" name="sexo" value="masculino">
+              Masculino
+            </label>
+            <label>
+              <input type="radio" name="sexo" value="feminino">
+              Femininino
+            </label>
+          </fieldset>
+
+          <div>
+            <label for="nascimento">Data de nascimento</label>
+            <inpu type="date" id="nascimetno" placeholder="dd / mm / yyyy" required>
+          </div>
+        
+          <div>
+            <label for="cor"> Cor favorita</label>
+            <input type="color" id="cor" name="cor" required>
+          </div>
+
+          <div>
+            <label for="github">Perfil no GitHub</label>
+            <input type="text" id="github" name="github" required>
+          </div>
+
+        </fieldset>
+
+        <div class="acoes">
+          <button type="submit">Inscrever</button>
+          <button type="reset">Limpar</button>
+      </form>
+    </main>
+  </body>
+  <footer>
+    <a href="https://www.facebook.com/ifsppirituba"> <img src="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/77770610c0de515c6150e899d70445ff3d25094d/facebook.png" alt="facebook" width="30">
+    <p>IFSP Campus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato (011) 2504-0100</p>
+  </footer>
+</html>
