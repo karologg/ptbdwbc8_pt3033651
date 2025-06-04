@@ -72,7 +72,8 @@ body {
 }
 
 .next {
-    right: 1000;
+    right: 0;
+    margin: 300px;
     border-radius: 3px 0 0 3px;
 }
 
